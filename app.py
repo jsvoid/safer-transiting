@@ -3,7 +3,7 @@ from flask import Flask, render_template
 # Initialize Flask app with the template folder address
 app = Flask(__name__, template_folder='templates')
 
-@app.route('/')
+@app.route('/transit')
 def map():
     return render_template('map.html')
 # Listen on external IPs
